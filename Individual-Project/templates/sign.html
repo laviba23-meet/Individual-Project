@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/sign.css">
+    <script type="text/javascript" src="../static/sign.js"></script>
+    <title></title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Chess by Banner</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Email:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Enter your email" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Enter your password">
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">LogIn</button>
+            </div>
+            <div class="info_div">
+                <p>Don't have an account? <a href="register/reg-form.php"> Sign Up</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Lavi Banner</p>
+    </footer>
+    
+</body>
+</html>
