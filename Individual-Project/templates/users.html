@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>List Of Users</title>
+<body>
+<h1 style= "font-size: 80px;">Welcome Lavi Banner!</h1>
+<br>
+<br>
+<br>
+<br>
+<h1 style= "font-size: 50px;">Signed Up Users: </h1>
+<br>
+<br>
+{%for user in users%}
+<br>
+<h2 style="font-size: 40px; ">{{users[user]["fullname"]}}</h2>
+<br>
+<h2 style="font-size: 30px; ">Email: {{users[user]["email"]}}</h2>
+<br>
+<h2 style="font-size: 30px; ">Password: {{users[user]["password"]}}</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{%endfor%}
+</body>
+
+</html>
